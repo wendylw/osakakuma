@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Video Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7AC8C4" offset="0%"></stop>
+            <stop stop-color="#15A5B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="osakakuma-website-mobile" transform="translate(-152.000000, -631.000000)">
+            <g id="Video-Button" transform="translate(153.000000, 632.000000)">
+                <circle id="Oval-3" stroke="url(#linearGradient-1)" cx="27" cy="27" r="27"></circle>
+                <circle id="Oval-3-Copy" fill="url(#linearGradient-1)" cx="27" cy="27" r="22.8461538"></circle>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(29.769231, 27.000000) rotate(90.000000) translate(-29.769231, -27.000000) " points="29.7692308 21.4615385 39.4615385 32.5384615 20.0769231 32.5384615"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
