@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: PingFangSC, "PingFang SC", "Helvetica Neue", -apple-system, Arial, sans-serif;
+  font-family: 'Hind', "Helvetica Neue", -apple-system, Arial, sans-serif;
   font-size: $main-font;
   font-weight: 300;
   color: $main-color;
@@ -247,16 +247,6 @@ ul {
     clear: both;
   }
 
-  &__address {
-    display: inline-block;
-    padding: 20px 0;
-  }
-
-  &__phones {
-    float: right;
-    padding: 20px 7% 20px 0;
-  }
-
   &__nav {
     padding: 15px 0 10px;
     margin: 0 -12px;
@@ -281,11 +271,6 @@ ul {
   &__extraInfo-item {
     margin-right: 30px;
     font-size: $small-font;
-  }
-
-  &__qrcode {
-    margin: 35px 0;
-    max-width: 130px;
   }
 }
 
@@ -388,10 +373,6 @@ ul {
   .header {
     min-height: 360px;
 
-    &__detail {
-      padding: 0 15px;
-    }
-
     &__logo {
       a {
         display: block;
@@ -492,10 +473,6 @@ ul {
     &__extraInfo-item {
       display: block;
       text-align: center;
-    }
-
-    &__qrcode {
-      margin: 10px 0;
     }
   }
 }
