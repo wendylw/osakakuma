@@ -446,7 +446,21 @@ ul {
   }
 
   .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+    .col-6 {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__logo {
+      max-width: 200px;
+    }
+
+    &__link {
+      padding: 20px 10px;
+    }
   }
 }
 

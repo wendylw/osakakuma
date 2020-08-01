@@ -303,7 +303,18 @@ ul {
       -moz-transform: translate(0, 0);
       -ms-transform: translate(0, 0); }
     .header-nav__submenu.show {
-      display: block; } }
+      display: block; }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .footer .col-6 {
+      text-align: center;
+      width: 100%; }
+    .footer__logo {
+      max-width: 200px; }
+    .footer__link {
+      padding: 20px 10px; } }
 .media {
   padding-top: 60px;
   padding-bottom: 60px; }
@@ -380,6 +391,8 @@ ul {
       clear: both; }
   .partner__item {
     display: inline-block; }
+  .partner__link {
+    display: block; }
   .partner__image {
     max-height: 60px; }
 
@@ -492,10 +505,33 @@ ul {
       vertical-align: middle;
       padding: 0 20px; }
 
-  .store__title-container {
-    display: block; }
-  .store__title {
-    text-align: center;
-    font-size: 1.5rem; } }
+  .store {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .store__title-container {
+      display: block;
+      float: none;
+      width: auto; }
+    .store__title {
+      text-align: center;
+      font-size: 1.5rem; }
+    .store__hr {
+      margin: 20px auto; }
+    .store__address {
+      text-align: center;
+      margin: 10px auto; }
+    .store__image-container {
+      width: 100%; }
+
+  .contact-us {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .contact-us__title {
+      text-align: center;
+      font-size: 1.5rem; }
+    .contact-us__subtitle {
+      margin: 15px 5px; }
+    .contact-us__group {
+      margin: 20px 15px; } }
 
 /*# sourceMappingURL=main.css.map */
