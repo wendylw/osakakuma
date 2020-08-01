@@ -163,6 +163,13 @@
   }
 }
 
+.contact-footer {
+  background-image: url(../img/footer-background.jpg);
+  background-position: bottom left;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
 .contact-us {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -334,6 +341,18 @@
 
     &__group {
       margin: 20px 15px;
+    }
+
+    &__input {
+      height: 40px;
+    }
+
+    &__button {
+      padding: 6px 10px;
+    }
+
+    &__button img {
+      width: 30px;
     }
   }
 

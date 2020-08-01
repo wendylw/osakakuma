@@ -133,8 +133,14 @@ ul {
 }
 
 .header {
+  background-image: url(../img/header-background.jpg);
+  background-position: top right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
   &__logo {
-    margin: 30px auto;
+    padding: 30px 15px;
+    margin: 0 auto;
     max-width: 180px;
   }
 
@@ -454,12 +460,22 @@ ul {
       width: 100%;
     }
 
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__logo-container {
+      padding: 15px;
+      border-bottom: 1px solid $middle-gray-1;
+    }
+
     &__logo {
-      max-width: 200px;
+      max-width: 150px;
     }
 
     &__link {
       padding: 20px 10px;
+      font-weight: 600;
     }
   }
 }

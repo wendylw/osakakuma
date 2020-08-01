@@ -107,63 +107,69 @@ ul {
 .block-mobile {
   display: none !important; }
 
-.header__logo {
-  margin: 30px auto;
-  max-width: 180px; }
-.header__content {
-  position: relative;
-  margin: 60px auto; }
-.header__base-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10; }
-.header__introduction {
-  padding: 30% 0; }
-.header__subtitle {
-  max-width: 120px; }
-.header__title {
-  margin: 15px 0;
-  font-size: 4.15rem;
-  background: linear-gradient(120deg, #7AC8C4 0%, #15A5B2 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent; }
-.header__description {
-  color: #000; }
-.header__watch-video-container {
-  display: block; }
-.header__watch-video {
-  max-width: 60px; }
-.header__watch-video-text {
-  margin: 0 20px;
-  font-style: italic;
-  font-size: 12px; }
-.header__slide-container {
-  position: relative;
-  margin-left: 24%;
-  width: 76%; }
-.header__slide-controller {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 0;
-  z-index: 10; }
-.header__slide-controller-item {
-  display: inline-block;
-  padding: 5px 20px;
-  font-size: 0;
-  background-color: #fff; }
-  .header__slide-controller-item svg {
-    width: 24px; }
-.header .owl-nav {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 20; }
-.header .owl-dots {
-  display: none; }
+.header {
+  background-image: url(../img/header-background.jpg);
+  background-position: top right;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
+  .header__logo {
+    padding: 30px 15px;
+    margin: 0 auto;
+    max-width: 180px; }
+  .header__content {
+    position: relative;
+    margin: 60px auto; }
+  .header__base-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+  .header__introduction {
+    padding: 30% 0; }
+  .header__subtitle {
+    max-width: 120px; }
+  .header__title {
+    margin: 15px 0;
+    font-size: 4.15rem;
+    background: linear-gradient(120deg, #7AC8C4 0%, #15A5B2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; }
+  .header__description {
+    color: #000; }
+  .header__watch-video-container {
+    display: block; }
+  .header__watch-video {
+    max-width: 60px; }
+  .header__watch-video-text {
+    margin: 0 20px;
+    font-style: italic;
+    font-size: 12px; }
+  .header__slide-container {
+    position: relative;
+    margin-left: 24%;
+    width: 76%; }
+  .header__slide-controller {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    z-index: 10; }
+  .header__slide-controller-item {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 0;
+    background-color: #fff; }
+    .header__slide-controller-item svg {
+      width: 24px; }
+  .header .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20; }
+  .header .owl-dots {
+    display: none; }
 
 .footer {
   padding-top: 60px;
@@ -311,10 +317,16 @@ ul {
     .footer .col-6 {
       text-align: center;
       width: 100%; }
+    .footer__container {
+      padding: 0 20px; }
+    .footer__logo-container {
+      padding: 15px;
+      border-bottom: 1px solid #979797; }
     .footer__logo {
-      max-width: 200px; }
+      max-width: 150px; }
     .footer__link {
-      padding: 20px 10px; } }
+      padding: 20px 10px;
+      font-weight: 600; } }
 .media {
   padding-top: 60px;
   padding-bottom: 60px; }
@@ -418,6 +430,12 @@ ul {
     color: #606060; }
   .store__image-container {
     margin: 40px 0; }
+
+.contact-footer {
+  background-image: url(../img/footer-background.jpg);
+  background-position: bottom left;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
 
 .contact-us {
   padding-top: 60px;
@@ -532,6 +550,12 @@ ul {
     .contact-us__subtitle {
       margin: 15px 5px; }
     .contact-us__group {
-      margin: 20px 15px; } }
+      margin: 20px 15px; }
+    .contact-us__input {
+      height: 40px; }
+    .contact-us__button {
+      padding: 6px 10px; }
+    .contact-us__button img {
+      width: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
