@@ -1,0 +1,482 @@
+@import './var';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Hind', "Helvetica Neue", -apple-system, Arial, sans-serif;
+  font-size: $main-font;
+  font-weight: 400;
+  color: $main-color;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+h1 {
+  font-size: $banner-font;
+  margin: 0;
+}
+
+h2 {
+  font-size: $biggest-font;
+  margin: 0;
+}
+
+h3 {
+  font-size: $bigger-font;
+  margin: 0;
+}
+
+label,
+a {
+  font-size: $big-font;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h4,
+p {
+  font-size: $main-font;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  height: auto;
+  line-height: 100%;
+}
+
+input {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.big-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-line-height-base {
+  line-height: 1.5em;
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+}
+
+.col-4 {
+  float: left;
+  width: 33.33%;
+}
+
+.col-5 {
+  float: left;
+  width: 41.66%;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+}
+
+.col-7 {
+  float: left;
+  width: 58.33%;
+}
+
+.col-9 {
+  float: left;
+  width: 75%;
+}
+
+.block-mobile {
+  display: none !important;
+}
+
+.header {
+  background-image: url(../img/header-background.jpg);
+  background-position: top right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+  &__logo {
+    padding: 30px 15px;
+    margin: 0 auto;
+    max-width: 180px;
+  }
+
+  &__content {
+    position: relative;
+    margin: 60px auto;
+  }
+
+  &__base-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  &__introduction {
+    padding: 30% 0;
+  }
+
+  &__subtitle {
+    max-width: 120px;
+  }
+
+  &__title {
+    margin: 15px 0;
+    font-size: 4.15rem;
+    background: linear-gradient(120deg, $theme-color-light 0%, $theme-color 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    color: $black;
+  }
+
+  &__watch-video-container {
+    display: block;
+  }
+
+  &__watch-video {
+    max-width: 60px;
+  }
+
+  &__watch-video-text {
+    margin: 0 20px;
+    font-style: italic;
+    font-size: $small-font;
+  }
+
+  &__slide-container {
+    position: relative;
+    margin-left: 24%;
+    width: 76%;
+  }
+
+  &__slide-controller {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    z-index: 10;
+  }
+
+  &__slide-controller-item {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 0;
+    background-color: $white;
+
+    svg {
+      width: 24px;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .owl-dots {
+    display: none;
+  }
+}
+
+.header-nav {
+
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__logo {
+    max-width: 240px;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    font-size: 1rem;
+    color: $dark-gray;
+  }
+}
+
+.nav {
+  background-color: $light-black;
+  color: $white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    display: inline-block;
+    margin-right: 90px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    &__item {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: $small-font;
+  }
+
+  h1 {
+    font-size: $banner-font-m;
+  }
+
+  h2 {
+    font-size: $bigger-font;
+  }
+
+  h3 {
+    font-size: $big-font;
+  }
+
+  label,
+  a {
+    font-size: $main-font;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h4,
+  p {
+    font-size: $small-font;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .big-container {
+    max-width: 900px;
+  }
+
+  .header-nav {
+  }
+
+  .footer {
+
+  }
+}
+
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .header {
+    &__logo {
+      max-width: 140px;
+    }
+
+    &__content {
+      margin: 0;
+    }
+
+    &__slide-container {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &__slide-controller {
+      display: none;
+    }
+
+    &__introduction {
+      padding: 30px 15px;
+    }
+
+    &__base-info {
+      position: static;
+    }
+
+    &__watch-video-container {
+      text-align: center;
+      margin: 15px auto;
+    }
+
+    &__watch-video-text {
+      display: block;
+      margin: 15px auto;
+      font-weight: 600;
+    }
+  }
+
+  .header-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 60px 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: $main-color;
+    background-color: $white;
+    z-index: 2;
+    overflow-y: auto;
+
+    a {
+      color: inherit;
+    }
+
+    &__item {
+      display: block;
+      padding: 0;
+
+      a {
+        padding: 20px;
+      }
+
+      a:not(.language):hover {
+        background-color: transparent;
+      }
+    }
+
+    &__item--m {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px;
+
+      img {
+        max-width: 16px;
+      }
+    }
+
+    &__dropdown-btn {
+      position: relative;
+    }
+
+    &__dropdown-btn:after {
+      position: absolute;
+      right: 20px;
+      top: 24px;
+      background-image: url(../img/arrow-down-m.png);
+    }
+
+    &__submenu {
+      display: none;
+      visibility: visible !important;
+      position: static;
+      width: auto;
+      color: $main-color;
+      background-color: $white;
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+    }
+
+    &__submenu.show {
+      display: block;
+    }
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .col-6 {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    &__logo-container {
+      padding: 15px;
+      border-bottom: 1px solid $middle-gray-1;
+    }
+
+    &__logo {
+      max-width: 150px;
+    }
+
+    &__link {
+      padding: 20px 10px;
+      font-weight: 600;
+    }
+  }
+}
